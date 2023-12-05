@@ -133,25 +133,31 @@ $(document).ready(function() {
       return;
     }else if(validEmail.test(mail)){
 
+      mostrarSpinner();
+
       let _datos = {
         from: mail,
         to: "danielgalvanastorga@gmail.com", 
         subject: subject,
         text: message,
         name: name,
-        phone: phone
+        phone: phone,
+        pass: "oabnoavuvsqfwzze"
       }
       
-      fetch('http://localhost:3000/api/sendmail', {
+      fetch('https://apisendmail-production.up.railway.app/api/sendmail', {
         method: "POST",
         body: JSON.stringify(_datos),
-        headers: {"Content-type": "application/json; charset=UTF-8"}
+        headers: {
+            headers: {"Content-type": "application/json"}
+        }
       })
       .then(response => response.json()) 
       .then(json => {
         console.log(json);
         alert("se envió el correo, gracias!!!");
         $('.form')[0].reset();
+        mostrarButton();
       })
       .catch(err => console.log(err));
     }else{
@@ -170,3 +176,21 @@ window.addEventListener('scroll', function(){
   navbarCollapsible.classList.remove('fixedTop');
   scrollPos = (document.body.getBoundingClientRect()).top;
 });
+
+function mostrarSpinner(){
+  const formSpinner = $('#submit')
+  $('#submit button').remove();
+  const spinner = $("<div></div>")
+  spinner.addClass( "spinner" );
+  spinner.html(`
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+  `)
+  formSpinner.append(spinner);
+}
+function mostrarButton(){
+  $('#submit .spinner').remove();
+  const btnSubmit = $('<button type="submit" class="fourth">Enviar</button>')
+  $('#submit').append(btnSubmit);
+}
