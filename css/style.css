@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'KdamThmorPro-Regular';
-    src: url('../fonts/KdamThmorPro-Regular.ttf') format('truetype'),
-         url('../fonts/KdamThmorPro-Regular.ttf') format('truetype');
+    src: url('/fonts/KdamThmorPro-Regular.ttf') format('truetype'),
+         url('/fonts/KdamThmorPro-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
