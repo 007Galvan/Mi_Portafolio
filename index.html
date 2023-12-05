@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi portafolio</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="manifest" href="manifest.json"> -->
+
+
+
+</head>
+
+<body>
+
+  <div class="fixedTop" id="divNav">
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">
+        <a href="https://github.com/007Galvan" target="_blank"><img src="img/github2.png" alt="imgGithub"></a>
+        <a href="https://www.linkedin.com/in/carlos-daniel-galv%C3%A1n-astorga-985452238/" target="_blank"><img
+            src="img/linkedin.png" alt="imgLinkedin"></a>
+      </div>
+
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+
+          <li><a href="#secReview">Sobre Mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+
+          <li class="services">
+            <a href="#">Herramientas</a>
+
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="#languages">Lenguajes</a></li>
+              <li><a href="#frameworks">Frameworks y librerias</a></li>
+              <li><a href="#technologies">Tecnologías y Herramientas</a></li>
+              <li><a href="#databases">Base de Datos</a></li>
+            </ul>
+
+          </li>
+
+          <li><a href="#especialities">Mis proyectos</a></li>
+          <li><a href="#form">Contacto</a></li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <section id="secIntro">
+    <div class="hola">
+      <div class="holaTyping">
+        <h1>Hola soy Carlos Daniel</h1>
+      </div>
+      <div class="holaTyping">
+        <h4></h4>
+      </div>
+      <!-- Y soy desarrollador de Software -->
+
+      <div class="imagesIntro">
+        <img src="img/languages/html.png" alt="htmlLogo">
+        <img src="img/languages/css.png " alt="cssLogo">
+        <img src="img/languages/javascript.png" alt="javascriptLogo">
+        <img src="img/languages/angular.png" alt="angularLogo">
+        <img src="img/languages/mongo.png" alt="mongoLogo">
+      </div>
+      <div class="buttonsIntro">
+        <a href="#secReview" class="button">Mostrar más</a>
+        <a href="assets/CurriculumVitae-tsu2.0.pdf" download="CurriculumVitae.pdf" class="button-cv">Descargar mi CV</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="secReview">
+    <div class="moodNight">
+      <div class='toggle-switch'>
+        <label>
+          <input type='checkbox' id="moon-light">
+          <span class='slider'></span>
+        </label>
+      </div>
+      <p>Modo Noche</p>
+    </div>
+    <div class="reviewTitle">
+      <h2>Sobre Mi</h2>
+    </div>
+    <div class="imgReview">
+      <p>Hola!!!, Soy Carlos Daniel Galvan Astorga y tengo 21 años, actualmente estoy a menos de un año para graduarme
+        de
+        la Ingenieria en Desarrollo y Gestion de Software, en la Universidad Tecnologica del Norte de
+        Aguascalientes y durante estos casi 4 años me ha fascinado el mundo de la programación en todos los lenguajes
+        en los que he desarrollado, ya sean orientados a objetos o no, frameworks, bases de datos y demás, pero aun más
+        el desarrollo BackEnd.</p>
+      <img src="img/me2.png" alt="developer2">
+    </div>
+  </section>
+  <hr id="intro-skills">
+
+
+  <section id="skills">
+    <div class="skillsTitle">
+      <h2>Habilidades</h2>
+    </div>
+    <div class="skillsBody">
+      <!-- ------------html---------------- -->
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div class="number" id="numberH">
+              70%
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient>
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <div class="number">
+          <p>HTML</p>
+        </div>
+      </div>
+      <!-- ------------CSS---------------- -->
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div class="number" id="numberCS">
+              65%
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <div class="number">
+          <p>CSS</p>
+        </div>
+      </div>
+      <!-- ------------Javascript---------------- -->
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div class="number" id="numberJ">
+              65%
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient>
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <div class="number">
+          <p>Javascript</p>
+        </div>
+      </div>
+      <!-- ------------Java---------------- -->
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div class="number" id="numberJava">
+              15%
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient>
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <div class="number">
+          <p>Java</p>
+        </div>
+      </div>
+      <!-- ------------Sql---------------- -->
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div class="number" id="numberSql">
+              40%
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient>
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <div class="number">
+          <p>Sql</p>
+        </div>
+      </div>
+      <!-- ------------Ingles---------------- -->
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div class="number" id="numberIngles">
+              45%
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient>
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+        <div class="number">
+          <p>Inglés</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ------------------------ section tools----------------------- -->
+  <hr id="intro-tools">
+  <section id="tools">
+    <div class="toolsTitle">
+      <h2>Lenguajes, frameworks, Tecnologias y Herramientas:</h2>
+    </div>
+    <div class="languages" id="languages">
+      <div class="languagesTitle">
+        <h4>Lenguajes:</h4>
+      </div>
+      <div class="languagesBody">
+        <img src="img/languages/javascript.png" alt="javascript" class="imgLanguages">
+        <img src="img/languages/html.png" alt="HTML" class="imgLanguages">
+        <img src="img/languages/css.png" alt="CSS" class="imgLanguages">
+      </div>
+    </div>
+    <div class="frameworks" id="frameworks">
+      <div class="frameworksTitle">
+        <h4>Frameworks y liberiras:</h4>
+      </div>
+      <div class="frameworksBody">
+        <img src="img/frameworks/bootstrap.png" alt="bootstrap" class="imgLanguages">
+        <img src="img/frameworks/react.png" alt="react" class="imgLanguages">
+        <img src="img/frameworks/vue.png" alt="vue.Js" class="imgLanguages">
+        <img src="img/frameworks/tailwind.png" alt="tailwind" class="imgLanguages">
+      </div>
+    </div>
+
+    <div class="technologies" id="technologies">
+      <div class="technologiesTitle">
+        <h4>Tecnologias y Herramientas:</h4>
+      </div>
+      <div class="technologiesBody">
+        <img src="img/technologies/git.png" alt="Git" class="imgLanguages">
+        <img src="img/technologies/github.png" alt="GitHub" class="imgLanguages">
+        <img src="img/technologies/npm.png" alt="npm" class="imgLanguages">
+        <img src="img/technologies/devops3.png" alt="devops" class="imgLanguages">
+        <img src="img/technologies/jira.png" alt="jira" class="imgLanguages">
+      </div>
+    </div>
+    <div class="databases" id="databases">
+      <div class="databasesTitle">
+        <h4>Base de datos:</h4>
+      </div>
+      <div class="databasesBody">
+        <img src="img/databases/mysql.png" alt="mysql" class="imgLanguages">
+        <img src="img/databases/sql.png" alt="sql" class="imgLanguages">
+        <img src="img/databases/sqlite.png" alt="mysql" class="imgLanguages">
+        <img src="img/languages/mongo.png" alt="mongo" class="imgLanguages">
+
+
+      </div>
+    </div>
+
+  </section>
+
+  <hr id="intro-especialities">
+  <!--------------------- Especialities-------------------------- -->
+
+  <section id="especialities">
+    <!-- <div class="bg">
+      <h1>Especialidades</h1>
+    </div> -->
+    <div class="especialitiesTitle">
+      <h2>Mis proyectos:</h2>
+    </div>
+    <div class="nft">
+      <div class='main'>
+        <img class='tokenImage' src="img/projects/laEstacion.png" alt="La_Estacion" />
+        <h2>Vinicola la Estación</h2>
+        <p class='description'>Pagina web y aplicación andrid hecha en cordova, 100% responsiva y funcional a través
+          del local storage, donde se venden vinos y licores.
+        </p>
+        <div class='tokenInfo'>
+          <div class="price">
+            <ins></ins>
+            <p>html, css, javascript</p>
+          </div>
+        </div>
+        <hr />
+        <div class='creator'>
+          <div class='wrapper'>
+            <a href="https://github.com/007Galvan/Vinicola-la-Estaci-n.git" target="_blank">
+              <img src="img/technologies/github.png" alt="Creator" /></a>
+          </div>
+          <p><ins>Descubrir en GitHub</ins></p>
+        </div>
+      </div>
+    </div>
+    <div class="nft">
+      <div class='main'>
+        <img class='tokenImage' src="img/projects/jugosNaty.png" alt="jugosNaty" />
+        <h2>Jugos Naty</h2>
+        <p class='description'>Jugos Naty es una pagina web 100% responsiva para la venta de jugos y lonches en el
+          municipio de Rincon de Romos. La interfaz se conecta directamente con una API Rest en NodeJs para el trabajo
+          de la
+          información y a una base de datos en MySql.
+        </p>
+        <div class='tokenInfo'>
+          <div class="price">
+            <ins></ins>
+            <p>bootstrap 5, nodeJs, Express, MySql</p>
+          </div>
+        </div>
+        <hr />
+        <div class='creator'>
+          <div class='wrapper'>
+            <a href="https://github.com/omar48121/jugosnaty.git" target="_blank">
+              <img src="img/technologies/github.png" alt="Creator" /></a>
+          </div>
+          <p><ins>Descubrir en GitHub</ins></p>
+        </div>
+      </div>
+    </div>
+    <div class="nft">
+      <div class='main'>
+        <img class='tokenImage' src="img/projects/kangrePonce.jpeg" alt="kangrePonce" />
+        <h2>Kangre Ponce</h2>
+        <p class='description'>Kangre Ponce es una app movil para Android, donde los usuarios registrados pueden ordenar
+          comida rapida entre otros. La app es solo la interfaz ya que se comunica con una API Rest para trabajar la
+          información y esta a la vez con una base de datos en MongoDB
+        </p>
+        <div class='tokenInfo'>
+          <div class="price">
+            <ins></ins>
+            <p>Java, NodeJs, Express, MongoDB</p>
+          </div>
+        </div>
+        <hr />
+        <div class='creator'>
+          <div class='wrapper'>
+            <a href="https://github.com/IvanGS04/KangrePonce.git" target="_blank">
+              <img src="img/technologies/github.png" alt="Creator" /></a>
+          </div>
+          <p><ins>Descubrir en GitHub</ins></p>
+        </div>
+      </div>
+    </div>
+    <div class="nft">
+      <div class='main'>
+        <img class='tokenImage' src="img/projects/carfer.png" alt="Carfer" />
+        <h2>Carfer</h2>
+        <p class='description'>Carfer es una pagina web 100% responsiva en donde se vende ropa y articulos deportivos
+          para todo tipo de edades. Fue diseñada con bootstrap, y su funcionalidad a través de PHP y MySql.
+        </p>
+        <div class='tokenInfo'>
+          <div class="price">
+            <ins></ins>
+            <p>Bootstrap 4, PHP, MySql</p>
+          </div>
+        </div>
+        <hr />
+        <div class='creator'>
+          <div class='wrapper'>
+            <a href="https://github.com/007Galvan/carfer.git" target="_blank">
+              <img src="img/technologies/github.png" alt="Creator" /></a>
+          </div>
+          <p><ins>Descubrir en GitHub</ins></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr id="intro-form">
+
+  <section id="form">
+    <div class="formTitle">
+      <h2>Contáctame:</h2>
+    </div>
+    <div class="formBody">
+      <div class="container">
+        <div class="cta-form">
+          <h2>Mis Redes Sociales</h2>
+          <p><a href="https://www.facebook.com/carlitos.galvan.562?mibextid=ZbWKwL" target="_blank"><img
+                src="assets/facebook.png" alt="facebook"></a>
+            <a href="https://instagram.com/c.daniel_7galvan?igshid=M2RkZGJiMzhjOQ==" target="_blank"><img
+                src="assets/instagram.png" alt="instagram"></a>
+          </p>
+          <h2>O enviame un correo con tu información:</h2>
+        </div>
+        <form action="" class="form">
+
+          <input type="text" placeholder="Nombre" class="form__input" id="name" />
+          <label for="name" class="form__label">Nombre</label>
+
+          <input type="email" placeholder="Correo" class="form__input" id="email" />
+          <label for="email" class="form__label">Correo</label>
+
+          <input type="tel" placeholder="Telefono" class="form__input" id="phone" />
+          <label for="phone" class="form__label">Telefono</label>
+
+          <input type="text" placeholder="Asunto" class="form__input" id="subject" />
+          <label for="subject" class="form__label">Asunto</label>
+
+          <textarea cols="40" rows="5" placeholder="Mensaje" class="form__textarea" id="message"></textarea>
+          <label for="message" class="form__labelText ">Mensaje</label>
+
+          <button type="submit" class="fourth">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- <script src="js/app.js"></script> -->
+
+</body>
+
+</html>
