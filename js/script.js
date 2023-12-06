@@ -144,27 +144,28 @@ $(document).ready(function() {
         phone: phone,
         pass: "oabnoavuvsqfwzze"
       }
-      
+
       fetch('https://apisendmail-production.up.railway.app/api/sendmail', {
-        method: "POST",
-        body: JSON.stringify(_datos),
+        method: 'POST',
         headers: {
-            headers: {"Content-type": "application/json"}
-        }
-      })
-      .then(response => response.json()) 
-      .then(json => {
-        console.log(json);
-        alert("se envió el correo, gracias!!!");
-        $('.form')[0].reset();
-        mostrarButton();
-      })
-      .catch(err => console.log(err));
+            "Content-Type": "application/json",
+        },
+            body: JSON.stringify(_datos)
+        })
+        .then(response => response.json()) 
+        .then(res => {
+          console.log(res);
+          alert("se envió el correo, gracias!!!");
+          $('.form')[0].reset();
+          mostrarButton();
+        })
+        .catch(err => console.log(err));
     }else{
       alert('Correo no valido');
       return
     }
-  }
+    }//function sendmail
+
 
   //Identificar si sube o baja el scroll
 var scrollPos = 0;
